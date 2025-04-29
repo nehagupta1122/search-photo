@@ -1,0 +1,107 @@
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, 
+  #f6d365 0%, 
+  #fda085 10%, 
+  #fc6767 20%, 
+  #b8a0a1 30%, 
+  #fcb69f 40%, 
+  #f6d365 50%, 
+  #fda085 60%, 
+  #fc6767 70%, 
+  #ff9a9e 80%, 
+  #110805 90%
+  
+  );
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 80px;
+  margin: 0;
+}
+.search-container {
+  background: white;
+  padding: 20px 30px;
+  border-radius: 50px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  display: flex;
+  gap: 10px;
+}
+#search-input {
+  padding: 10px 20px;
+  border: 2px solid #000000;
+  border-radius: 25px;
+  font-size: 16px;
+  width: 250px;
+  outline: none;
+  transition: border 0.3s ease;
+}
+#search-input:focus {
+  border-color: #6e4040; /* Border color change when input is focused */
+}
+#search-button {
+  padding: 10px 20px;
+  background: #8a8c8d;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+#search-button:hover {
+  background: #3d2929;
+  transform: scale(1.05); /* Button scale effect on hover */
+}
+#images-container {
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+.image-card {
+  width: 320px;
+  background: white;
+  padding: 15px;
+  border: 5px solid #fda085; /* Frame color */
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.image-card:hover {
+  transform: scale(1.05); /* Zoom effect */
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3); /* Enhanced shadow effect on hover */
+}
+.image-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+.image-card p {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #555;
+}
+.load-more-btn {
+  margin: 30px auto;
+  padding: 12px 30px;
+  font-size: 18px;
+  background: #6a11cb;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  display: block;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+.load-more-btn:hover {
+  background: #2575fc;
+  transform: scale(1.1); /* Slight zoom effect on hover */
+}
+.custom-text {
+    font-size: 30px; /* Set font size to 30px */
+  }
